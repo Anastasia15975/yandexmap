@@ -11,7 +11,7 @@ import com.yandex.mapkit.map.CameraPosition;
 import com.yandex.mapkit.mapview.MapView;
 
 public class MainActivity extends AppCompatActivity {
-    private MapView mapview;
+    private MapView map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        mapview.onStop();
+        map.onStop();
         MapKitFactory.getInstance().onStop();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        mapview.onStart();
+        map.onStart();
         MapKitFactory.getInstance().onStart();
     }
 }
