@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 new Animation(Animation.Type.SMOOTH, 0),
                 null);
     }
+    
 
     @Override
     protected void onStop() {
